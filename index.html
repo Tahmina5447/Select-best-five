@@ -18,9 +18,10 @@
 </head>
 <body>
     <!-- header start -->
-    <header>
-        <div class="bg-black py-40">
-            <h1 class="text-6xl text-amber-500 text-center font-bold	">Select Your Favorite Player</h1>
+    <header class="h-3/5 bg-black">
+        
+        <div class="bg-[url('images/bg2.jpg')] bg-no-repeat py-40 h-full">
+            <h1 class="text-6xl text-amber-500 text-center font-bold">Select Your Favorite Player</h1>
             <P class="text-white text-center mt-5 w-2/6 mx-auto text-2xl">Saepe necessitatibus nesciunt tenetur nisi rerum consequuntur labore itaque nostrum, cupiditate facilis fuga? Impedit!</P>
         </div>
         <!-- <div>
@@ -36,88 +37,83 @@
         <div class="w-10/12 mx-auto">
             <div class=" ">
                 <div class="grid grid-cols-4 gap-4">
-                    <div class="">
-                        <div class="">
-                            <img src="images/neymar.jpg" alt="" class="">
+                    <div style="height:400px;" class="bg-black">
+                        <div class="h-1/2">
+                            <img src="images/neymar.jpg" alt="" class="h-full w-full">
                         </div>
                         <div class="text-center bg-black py-5">
-                            <h2 class="text-white text-2xl">Neymar</h2>
+                            <h2 id="Neymar-name" class="text-white text-2xl">Neymar</h2>
                             <p class="text-gray-600	my-5">36 Goals . 120 Assist</p>
-                            <button class="text-white bg-blue-800 px-10 py-2">Select</button>
+                            <button onclick="clickButton('Neymar-name','Neymar')" id="Neymar" class="text-white bg-blue-800 px-10 py-2">Select</button>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="">
-                            <img src="images/neymar.jpg" alt="" class="">
+                    <div style="height:400px;" class="bg-black">
+                        <div class="h-1/2">
+                            <img src="images/Barbosa.jpg" alt="" class="h-full w-full">
                         </div>
                         <div class="text-center bg-black py-5">
-                            <h2 class="text-white text-2xl">Neymar</h2>
+                            <h2 id="Barbosa-name" class="text-white text-2xl">Barbosa</h2>
                             <p class="text-gray-600	my-5">36 Goals . 120 Assist</p>
-                            <button class="text-white bg-blue-800 px-10 py-2">Select</button>
+                            <button onclick="clickButton('Barbosa-name','Barbosa')" id="Barbosa" class="text-white bg-blue-800 px-10 py-2">Select</button>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="">
-                            <img src="images/neymar.jpg" alt="" class="">
+                    <div style="height:400px;" class="bg-black">
+                        <div class="h-1/2">
+                            <img src="images/Danilo.jpg" alt="" class="h-full w-full">
                         </div>
-                        <div class="text-center bg-black py-5">
-                            <h2 class="text-white text-2xl">Neymar</h2>
+                        <div class="text-center py-5">
+                            <h2 id="Danilo-name" class="text-white text-2xl">Danilo</h2>
                             <p class="text-gray-600	my-5">36 Goals . 120 Assist</p>
-                            <button class="text-white bg-blue-800 px-10 py-2">Select</button>
+                            <button onclick="clickButton('Danilo-name','Danilo')" id="Danilo" class="text-white bg-blue-800 px-10 py-2">Select</button>
                         </div>
                     </div>
-                    <div class="bg-black text-center " >
-                        <h2 class="text-amber-500 text-3xl text-semibold mt-5">Selected-Five</h2>
-                        <ol>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                    <div style="height:400px;" class="bg-black" >
+                        <h2 class="text-amber-500 text-3xl text-semibold my-5  text-center ">Selected-Five</h2>
+                        <ol class="text-white pl-8" id="ol">
                         </ol>
                     </div>
-                    <div class="">
-                        <div class="">
-                            <img src="images/neymar.jpg" alt="" class="">
+                    <div style="height:400px;" class="bg-black">
+                        <div class="h-1/2">
+                            <img src="images/Everton.jpg" alt="" class="h-full w-full">
                         </div>
                         <div class="text-center bg-black py-5">
-                            <h2 class="text-white text-2xl">Neymar</h2>
+                            <h2 id="Everton-name" class="text-white text-2xl">Everton</h2>
                             <p class="text-gray-600	my-5">36 Goals . 120 Assist</p>
-                            <button class="text-white bg-blue-800 px-10 py-2">Select</button>
+                            <button onclick="clickButton('Everton-name','Everton')" id="Everton" class="text-white bg-blue-800 px-10 py-2">Select</button>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="">
-                            <img src="images/neymar.jpg" alt="" class="">
+                    <div style="height:400px;" class="bg-black">
+                        <div class="h-1/2">
+                            <img src="images/Guilherme.jpg" alt="" class="h-full w-full">
                         </div>
                         <div class="text-center bg-black py-5">
-                            <h2 class="text-white text-2xl">Neymar</h2>
+                            <h2 id="Guilherme-name" class="text-white text-2xl">Guilherme</h2>
                             <p class="text-gray-600	my-5">36 Goals . 120 Assist</p>
-                            <button class="text-white bg-blue-800 px-10 py-2">Select</button>
+                            <button onclick="clickButton('Guilherme-name','Guilherme')" id="Guilherme" class="text-white bg-blue-800 px-10 py-2">Select</button>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="">
-                            <img src="images/neymar.jpg" alt="" class="">
+                    <div style="height:400px;" class="bg-black">
+                        <div class="h-1/2">
+                            <img src="images/Jesus.jpg" alt="" class="h-full w-full">
                         </div>
                         <div class="text-center bg-black py-5">
-                            <h2 class="text-white text-2xl">Neymar</h2>
+                            <h2 id="Jesus-name"class="text-white text-2xl">Jesus</h2>
                             <p class="text-gray-600	my-5">36 Goals . 120 Assist</p>
-                            <button class="text-white bg-blue-800 px-10 py-2">Select</button>
+                            <button onclick="clickButton('Jesus-name','Jesus')" id="Jesus" class="text-white bg-blue-800 px-10 py-2">Select</button>
                         </div>
                     </div>
-                    <div class=" bg-black text-center py-5">
+                    <div  class=" bg-black text-center py-5">
                         <h2 class="text-amber-500 text-3xl text-semibold">Budget</h2>
 
-                        <p class="text-white py-5"><label for="">Per Player </label><input class="bg-black w-1/3 border-2" type="text"></p>
+                        <p class="text-white py-5"><label for="">Per Player </label><input id="perPlayer-input" class="bg-black w-1/3 border-2" type="text"></p>
 
-                        <button class="text-white bg-blue-800 px-10 py-2 w-8/12 mx-auto">Calculate</button>
+                        <button id="calculate-btn" class="text-white bg-blue-800 px-10 py-2 w-8/12 mx-auto">Calculate</button>
 
-                        <p class="text-white py-5">Player Expenses  $<span class="text-white">0000</span></p>
-                        <p class="text-white"><label for="">Manager </label><input class="bg-black w-1/3 border-2" type="text"></p>
-                        <p class="text-white mt-3"><label for="">Coach </label><input class="bg-black w-1/3 border-2" type="text"></p>
-                        <button class="text-white bg-blue-800 px-10 py-2 my-5">Calculate Total</button>
-                        <p class="text-white">Total  $<span class="text-white">0000</span></p>
+                        <p class="text-white py-5">Player Expenses  $<span id="playerExpenses-input" class="text-white">0000</span></p>
+                        <p class="text-white"><label for="">Manager </label><input id="manager-input" class="bg-black w-1/3 border-2" type="text"></p>
+                        <p class="text-white mt-3"><label for="">Coach </label><input id="coach-input" class="bg-black w-1/3 border-2" type="text"></p>
+                        <button id="calculateTotal-btn" class="text-white bg-blue-800 px-10 py-2 my-5">Calculate Total</button>
+                        <p class="text-white">Total  $<span id="total" class="text-white">0000</span></p>
                     </div>
                     
                 </div>
@@ -132,7 +128,9 @@
 
 
     <!-- footer start -->
-    <footer></footer>
+    <footer class="bg-black py-16">
+        <p class="text-center text-white">Copyright @ 2022</p>
+    </footer>
     <!-- end footer -->
 
     <!-- js file link -->
