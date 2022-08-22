@@ -12,9 +12,9 @@ function clickButton(nameId,btnId){
     let listQuantity=lists.length;
     
     
-    // if(listQuantity>4){
-    //     alert('You can not select more than 5 players.')
-    // }
+    if(listQuantity===6){
+        alert('You can not select more than 5 players.')
+     }
     document.getElementById(btnId).disabled = true;
     document.getElementById(btnId).style.backgroundColor='gray';
 }
@@ -40,7 +40,9 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
     const playerExpenses=document.getElementById('playerExpenses-input');
     playerExpenses.innerText=playercost;
 
-    
+    if(isNaN){
+        alert('Please set proper value.')
+    }
 
 })
 
@@ -59,6 +61,8 @@ document.getElementById('calculateTotal-btn').addEventListener('click',function(
 
     const total=document.getElementById('total');
     total.innerText=playercost+manager+coach;
-
+    if(isNaN){
+        alert('Please set proper value.');
+    }
 
 })
