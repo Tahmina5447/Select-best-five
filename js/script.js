@@ -40,9 +40,7 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
     const playerExpenses=document.getElementById('playerExpenses-input');
     playerExpenses.innerText=playercost;
 
-    if(isNaN){
-        alert('Please set proper value.')
-    }
+   
 
 })
 
@@ -61,8 +59,6 @@ document.getElementById('calculateTotal-btn').addEventListener('click',function(
 
     const total=document.getElementById('total');
     total.innerText=playercost+manager+coach;
-    if(isNaN){
-        alert('Please set proper value.');
-    }
+    
 
 })
