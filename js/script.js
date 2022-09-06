@@ -3,18 +3,23 @@ function clickButton(nameId,btnId){
     const playerNameId=document.getElementById(nameId);
     const playerName=playerNameId.innerText;
 
+    let lists=document.querySelectorAll('li');
+    let listQuantity=lists.length;
+
+    if(listQuantity>4){
+        alert('You can not select more than 5 players.')
+        return;
+     }
+
     const node = document.createElement("li");
     const textnode = document.createTextNode(playerName);
     node.appendChild(textnode);
     document.getElementById("ol").appendChild(node);
 
-    let lists=document.querySelectorAll('li');
-    let listQuantity=lists.length;
     
     
-    if(listQuantity===6){
-        alert('You can not select more than 5 players.')
-     }
+    
+    
     document.getElementById(btnId).disabled = true;
     document.getElementById(btnId).style.backgroundColor='gray';
 }
@@ -38,10 +43,13 @@ document.getElementById('calculate-btn').addEventListener('click',function(){
     const playercost=perPlayer*listQuantity;
 
     const playerExpenses=document.getElementById('playerExpenses-input');
-    playerExpenses.innerText=playercost;
-
-   
-
+    if(perPlayer>0){
+        playerExpenses.innerText=playercost;
+    }else{
+        alert('set proper value')
+    }
+    // playerExpenses.innerText=playercost;
+        
 })
 
 document.getElementById('calculateTotal-btn').addEventListener('click',function(){
@@ -58,7 +66,15 @@ document.getElementById('calculateTotal-btn').addEventListener('click',function(
     
 
     const total=document.getElementById('total');
-    total.innerText=playercost+manager+coach;
+    if(manager>0 && coach>0 && playercost>0){
+        total.innerText=playercost+manager+coach;
+    }else(
+        alert('please set proper value')
+    )
+    
     
 
 })
+
+
+
